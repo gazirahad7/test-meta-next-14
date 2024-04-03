@@ -1,9 +1,20 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Head>
+        <title>Test Meta</title>
+
+        <meta
+          name="test meta"
+          content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
+          key="desc"
+        />
+      </Head>
+
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
